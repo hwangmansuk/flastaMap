@@ -30,7 +30,7 @@
     <div id="map"></div>
     <td><div id="sidebar"></div></td>
     <script src="constants.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyDiNcso1WGDrr_FNbeq6jnL0qISN1w8wJI&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyBq_w6hbkRRqmuCC_PrO01OCjF2wozJbY8&callback=initMap" async defer></script>
     <script>
       var map;
       var marker = [];
@@ -62,7 +62,7 @@
         });
 
         var request = new XMLHttpRequest();
-        request.open('GET', `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/sheet1?key=${SHEET_KEY}`, true);
+        request.open('GET', `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/sheet1?key=${AIzaSyBq_w6hbkRRqmuCC_PrO01OCjF2wozJbY8}`, true);
         request.responseType = 'json';
 
         request.onload = function () {
